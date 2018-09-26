@@ -5,7 +5,7 @@ CC:=gcc
 INCLUDES:=$(shell pkg-config --cflags libavformat libavcodec libswresample libswscale libavutil sdl)
 CFLAGS:=-Wall -ggdb
 LDFLAGS:=$(shell pkg-config --libs libavformat libavcodec libswresample libswscale libavutil sdl) -lm
-EXE:=SimplePlayer.out RtmpPlayer.out
+EXE:=SimplePlayer.out RtmpPlayer.out testplayer.out
 
 #
 # This is here to prevent Make from deleting secondary files.
